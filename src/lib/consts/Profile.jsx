@@ -6,7 +6,7 @@ const user = (
       <div className="flex items-start space-x-2">
         <img
           className="w-10 h-10 rounded-full"
-          src="/images/prof.png"
+          src={`${process.env.PUBLIC_URL}/TU.jpg`}
           alt="profileImage"
         />
         <div className="font-light dark:text-white text-sm">

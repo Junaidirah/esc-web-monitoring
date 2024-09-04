@@ -1,47 +1,41 @@
 import {
 	HiOutlineViewGrid,
-	HiOutlineCube,
-	HiOutlineUsers,
-} from 'react-icons/hi'
-import {PiWallet} from 'react-icons/pi'
-import {TbDiscount2} from 'react-icons/tb'
-import {MdOutlineLiveHelp} from 'react-icons/md'
+	HiPlus,
+	HiOutlineUser,
+	HiMinusCircle,
+} from 'react-icons/hi';
+// import { TbDiscount2 } from 'react-icons/tb';
+import { MdOutlineLiveHelp } from 'react-icons/md';
 
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
 		label: 'Dashboard',
 		path: '/',
-		icon: <HiOutlineViewGrid />
+		icon: <HiOutlineViewGrid />,
 	},
 	{
 		key: 'products',
 		label: 'Tambah Stasiun',
 		path: '/products',
-		icon: <HiOutlineCube />
+		icon: <HiPlus />,
 	},
 	{
 		key: 'Delete',
-		label: 'Delete',
+		label: 'Delete Stasiun',
 		path: '/DeleteStasiun',
-		icon: <HiOutlineUsers />
+		icon: <HiMinusCircle />,
 	},
 	{
-		key: 'income',
-		label: 'Income',
-		path: '/income',
-		icon: <PiWallet />
-	},
-	{
-		key: 'promote',
-		label: 'Promote',
-		path: '/promote',
-		icon: <TbDiscount2 />
+		key: 'about',
+		label: 'About',
+		path: '/About',
+		icon: <HiOutlineUser />,
 	},
 	{
 		key: 'help',
 		label: 'Help',
-		path: '/help',
-		icon: <MdOutlineLiveHelp />
-	}
-]
+		path: '/Help',
+		icon: <MdOutlineLiveHelp />,
+	},
+];

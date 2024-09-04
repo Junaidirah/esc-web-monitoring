@@ -2,7 +2,7 @@ import React from 'react'
 import DashboardStartsGrid from './DashboardStartsGrid'
 import OverviewChart from './OverviewChart'
 import CustomersChart from './CustomersChart'
-import ProductSell from './ProductSell'
+
 
 const Dashboard = () => {
   return (
@@ -13,9 +13,7 @@ const Dashboard = () => {
         <CustomersChart />
       </div>
 
-      <div className="flex flex-row gap-4 w-full">
-        <ProductSell />
-      </div>
+     
       
     </div>
   )

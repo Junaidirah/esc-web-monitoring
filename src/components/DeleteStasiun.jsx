@@ -1,17 +1,19 @@
-import React, {  } from 'react';
+import React from 'react';
+import Products from './Products';
 
-const Delete = ({ onDelete }) => {
-    // Fungsi untuk menangani penghapusan
-    const handleDelete = () => {
-      // Memanggil fungsi onDelete yang diteruskan dari komponen induk
-      onDelete();
-    };
-  
-    return (
-      <button onClick={handleDelete}>
-        Hapus
-      </button>
-    );
-  };
-  
-  export default Delete;
+const ParentComponent = () => {
+  // Fungsi untuk menangani penghapusan produk
+
+
+  return (
+    <div className="flex flex-row gap-4 w-full">
+      <Products />
+    </div>
+  );
+};
+
+export default ParentComponent;
+
+
+
+
